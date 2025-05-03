@@ -103,11 +103,50 @@ function deleteUser(id) {
   loadUsers();
 }
 
+// Student Login Page Functions
+function studentLogin() {
+  const id = document.getElementById('login-id')?.value.trim();
+  const password = document.getElementById('login-password')?.value.trim();
+  const error = document.getElementById('login-error');
+  const success = document.getElementById('login-success');
+
+  error.textContent = '';
+  error.style.display = 'none';
+  success.textContent = '';
+  success.classList.add('hidden');
+
+  if (!id || !password) {
+      error.textContent = 'Please fill in all fields.';
+      error.style.display = 'block';
+      return;
+  }
+
+  const users = JSON.parse(localStorage.getItem('users')) || [];
+  const user = users.find(user => user.id === id && user.password === password);
+
+  if (!user) {
+      error.textContent = 'Invalid ID or password.';
+      error.style.display = 'block';
+      return;
+  }
+
+  if (user.status !== 'approved') {
+      error.textContent = 'Your account has not been approved by admin.';
+      error.style.display = 'block';
+      return;
+  }
+
+  success.textContent = `Welcome, ${user.fullname}! You have successfully logged in.`;
+  success.classList.remove('hidden');
+  document.getElementById('login-id').value = '';
+  document.getElementById('login-password').value = '';
+}
+
 // Initialize page-specific functionality
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('userTable')) {
       // Approval page
       checkSession();
   }
-  // Register page doesn't need initialization
+  // Register and Student Login pages don't need initialization
 });

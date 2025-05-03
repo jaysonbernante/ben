@@ -9,6 +9,47 @@ h2 {
   color: #333;
 }
 
+/* Index Page Styles */
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background-color: #007bff;
+}
+
+.admin-btn:hover {
+  background-color: #0056b3;
+}
+
+.student-btn {
+  background-color: #28a745;
+}
+
+.student-btn:hover {
+  background-color: #218838;
+}
+
 /* Register Page Styles */
 .register-container {
   display: flex;
@@ -62,6 +103,65 @@ h2 {
   color: red;
   font-size: 0.9em;
   display: none;
+}
+
+/* Student Login Page Styles */
+.student-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.student-login-container .form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.student-login-container .form-group {
+  margin-bottom: 15px;
+}
+
+.student-login-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.student-login-container input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.student-login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.student-login-container button:hover {
+  background-color: #218838;
+}
+
+.student-login-container .error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.student-login-container .success {
+  color: green;
+  font-size: 0.9em;
 }
 
 /* Approval Page Styles */
@@ -144,5 +244,9 @@ h2 {
 }
 
 .approve-container .hidden {
+  display: none;
+}
+
+.hidden {
   display: none;
 }

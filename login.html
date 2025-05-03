@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="student-login-container">
+        <div class="form-container">
+            <h2>Student Login</h2>
+            <div class="form-group">
+                <label for="login-id">ID</label>
+                <input type="text" id="login-id" placeholder="Enter your ID" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <p id="login-error" class="error"></p>
+                <p id="login-success" class="success hidden"></p>
+            </div>
+            <button onclick="studentLogin()">Login</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
