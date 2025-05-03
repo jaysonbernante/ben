@@ -9,6 +9,24 @@ h2 {
   color: #333;
 }
 
+/* Home Button Styles */
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #5a6268;
+}
+
 /* Index Page Styles */
 .index-container {
   display: flex;
@@ -17,6 +35,18 @@ h2 {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding-top: 60px; /* Space for home button */
+}
+
+/* Student Portal Page Styles */
+.student-portal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 60px; /* Space for home button */
 }
 
 .button-group {
@@ -50,6 +80,22 @@ h2 {
   background-color: #218838;
 }
 
+.register-btn {
+  background-color: #17a2b8;
+}
+
+.register-btn:hover {
+  background-color: #138496;
+}
+
+.login-btn {
+  background-color: #ffc107;
+}
+
+.login-btn:hover {
+  background-color: #e0a800;
+}
+
 /* Register Page Styles */
 .register-container {
   display: flex;
@@ -57,6 +103,7 @@ h2 {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding-top: 60px; /* Space for home button */
 }
 
 .register-container .form-container {
@@ -112,6 +159,7 @@ h2 {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding-top: 60px; /* Space for home button */
 }
 
 .student-login-container .form-container {
@@ -168,6 +216,7 @@ h2 {
 .approve-container {
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 60px; /* Space for home button */
 }
 
 .approve-container table {

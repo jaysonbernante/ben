@@ -149,4 +149,4 @@ document.addEventListener('DOMContentLoaded', () => {
       checkSession();
   }
   // Register and Student Login pages don't need initialization
-});
+});//asasasasass///
