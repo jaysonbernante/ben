@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Approval</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="approve-container">
+        <h2>User Approval</h2>
+        <div id="loginContainer" class="login-container">
+            <p>Please log in to access user approvals.</p>
+            <button onclick="adminLogin()">Log In</button>
+        </div>
+        <table id="userTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Password</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Users will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
